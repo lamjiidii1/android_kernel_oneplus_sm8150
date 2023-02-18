@@ -11,11 +11,11 @@ reset='\e[0m'
 # Version 2.0
 ##############################################
 # User Variables
-export LOCALVERSION="-SDK_OP7TP_OOS11_RV.2.2"
+export LOCALVERSION="-H2OS_11_V1.0"
 # Kernel zip Name
-export kn="SDK_OP7TP_OOS11_RV.2.2.zip"
+export kn="H2OS_11_V1.0.zip"
 # Kernel Defconfig
-export dc=SD_defconfig
+export dc=1910_debug_defconfig
 
 ### System Variables ###
 ##############################################
@@ -49,7 +49,7 @@ export CROSS_COMPILE=$k/prebuilts/arm64/aarch64-linux-android-4.9/bin/aarch64-li
 # All Available cores (Used for normal compilation)
 export th="-j$(grep -c ^processor /proc/cpuinfo)"
 # 12 Cores Only: Recompile (Only used for 'recompiles' to catch errors more easily)
-export thrc="-j12"
+export thrc="-j16"
 ######################
 # Compile Path to out 
 o="O=$k/out/guacamole"
